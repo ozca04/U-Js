@@ -14,16 +14,32 @@ d /= 1;
 //console.log(d);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 let animal = "dog";
+let madDog = animal.toUpperCase();
 
+ 
 animal[0]; //--------> first letter of the string 
 console.log(animal[1]); //--------> second letter of the string 
 
 console.log(
-animal.toUpperCase()
+    animal.toUpperCase()
 );
-
-let madDog = animal.toUpperCase();
 
 console.log(
-madDog.toUpperCase()
+    madDog.toUpperCase("d")
 );
+
+let msg = "ahha that is so funny!";
+
+console.log(
+msg.indexOf("f")//tells what is the position of the f 
+);
+
+console.log(
+"haha that is so funny!".slice(5, 9)
+);
+
+
+
+console.log(msg.replace("ahha", "axaxaxa" ));
+
+console.log("axa".repeat(10));
