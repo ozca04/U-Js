@@ -43,3 +43,32 @@ console.log(
 console.log(msg.replace("ahha", "axaxaxa" ));
 
 console.log("axa".repeat(10));
+
+// DON'T TOUCH THIS LINE! (please)
+const word = "skateboard"; //Don't change this line!
+
+// YOUR CODE BELOW THIS LINE:
+
+ const facialHair = word.slice(5).replace("o", "e");
+
+console.log(facialHair);
+
+                                                        //string template literals 
+console.log(`hello ${1+3+4+5}`);
+
+let pricePerProduct = 2.23;
+let nameOfTheProduct = "coco";
+let amountOfTheProduct = 4;
+
+console.log(`You bought ${amountOfTheProduct} ${nameOfTheProduct}. total price is ${pricePerProduct * amountOfTheProduct}`)
+
+                                                        ///// MATH OBJECTS, u can do sin/con math objects like pi, rounding and etc.
+console.log(Math.PI);
+
+const random1 = Math.random();
+const random2 = random1*10
+const random3 = Math.floor(random2);
+const random4 = random3 + 1;
+
+console.log(random3);
+console.log(random4 + 4);
