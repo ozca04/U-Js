@@ -1,6 +1,10 @@
-let random = Math.floor(Math.random() * 10);
-if (random >= 5){
-    console.log(`Your number '${random}' is bigger or equal to 5`)
+let ahmet = prompt('please enter a number');
+console.log(ahmet);
+
+if(ahmet > 10){
+    console.log('congrats');
+}else if(ahmet < 10){
+    console.log('congrats u dodged a bullet')
 }else{
-    console.log(`Your number '${random}' is smaller than 5`)
+    console.log("fuck u")
 }
