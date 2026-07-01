@@ -1,10 +1,12 @@
-let ahmet = prompt('please enter a number');
-console.log(ahmet);
+const dayofweek = prompt('enter a day').toLowerCase();
 
-if(ahmet > 10){
-    console.log('congrats');
-}else if(ahmet < 10){
-    console.log('congrats u dodged a bullet')
+const password = prompt("enter a new password");
+
+if(password.lenght >= 6){
+    if(password.indexOf(' ') === -1){
+    //this is to make sure there are no spaces in password
+
+}
 }else{
-    console.log("fuck u")
+    console.log("not good")
 }
