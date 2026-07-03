@@ -1,6 +1,8 @@
-let a = Number(prompt("enter the first number"));
-let b = Number(prompt("enter the second number"));
-let calculation = prompt("enter what type of calculation u will do ( '+'  '-'  '*'  '/' )");
+function calculate() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    let calculation = document.getElementById("calculation").value;
+
 
 if(typeof a === "number" && typeof b === "number"){
     if (calculation === "*" || calculation === "x"){
@@ -16,4 +18,5 @@ if(typeof a === "number" && typeof b === "number"){
     }
 }else{
     document.getElementById("output").textContent = "this is not a number";
+}
 }

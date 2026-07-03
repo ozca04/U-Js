@@ -1,12 +1,26 @@
 .container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10rem;
+}
+button{
+    width: 8rem;
+    height: 3rem;
+}
+input{
+    width: 10rem;
+    height: 2rem;
+}
+p{
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10rem;
-    background-color: teal;
-}
-.container p{
-    font-family: 'inter', sans-serif;
-    font-size: 10rem;
-    color: beige;
+    background-color: cadetblue;
+    width: 10rem;
+    height: 5rem;
+    font-family: 'inter';
+    color: cornsilk;
+    font-size: 3rem;
 }
