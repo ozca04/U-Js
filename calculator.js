@@ -1,6 +1,6 @@
 let a = Number(prompt("enter the first number"));
 let b = Number(prompt("enter the second number"));
-let calculation = prompt("enter whatu want to do");
+let calculation = prompt("enter what type of calculation u will do ( '+'  '-'  '*'  '/' )");
 
 if(typeof a === "number" && typeof b === "number"){
     if (calculation === "*" || calculation === "x"){
