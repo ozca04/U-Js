@@ -4,3 +4,8 @@ let carBrands = ['Audi', 'Nissan', 'Honda'];
 let modelYear = [1990, 2000, 2010, 2020];
 
 console.log(modelYear);
+
+carBrands [2] = 'ferrari';
+modelYear [2030] = "future";// this causes to create empty items
+
+console.log(carBrands)
