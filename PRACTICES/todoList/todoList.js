@@ -21,7 +21,7 @@ while(input !== 'quit' && input !== 'q'){
             console.log('unkown index')
         }
     }
-    let input = prompt ('waht would you like to do')
+    input = prompt ('waht would you like to do')
 }
 
 console.log('OK!!')
