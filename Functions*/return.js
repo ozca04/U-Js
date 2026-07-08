@@ -40,3 +40,4 @@ function sumArray(numbb){
     return results;
 }
 results(5, 4)
+
