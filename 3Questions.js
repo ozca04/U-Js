@@ -33,12 +33,45 @@
 // }
 // printTimesTable(3);
 
-function sumUpTo(n){
-    let sum = 0
-    for(let i = 1; i <= n; i++){
-        sum += i 
-    }
-    return sum
-}
+// function sumUpTo(n){
+//     let sum = 0
+//     for(let i = 1; i <= n; i++){
+//         sum += i 
+//     }
+//     return sum
+// }
 
-console.log(sumUpTo(4))
+// console.log(sumUpTo(4))
+
+// function countdown(numm){
+//     for(let i = numm; i > 0; i--){
+//         console.log(i)
+//     }
+// }
+
+// countdown(80)
+
+// const student = {
+//     name: 'mia',
+//     grades: [80, 90, 100],
+//     average(){
+//         let sum = 0;
+//         for(let i = 0; i < this.grades.length; i++){
+//             sum += this.grades[i];
+//         }
+//         return sum / this.grades.length;
+//     }
+// }
+// console.log(student.average());
+
+
+function filterLongWords(words){
+    let result = [];
+    for(let i = 0; i < words.length; i++){
+        if(words[i].length > 4){
+            result.push(words[i]);
+        }
+    }
+    return result;
+}
+console.log(filterLongWords(["hi", "hello", "cat", "elephant"]));
