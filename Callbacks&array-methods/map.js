@@ -13,11 +13,18 @@ const namesAges = [
     }
 
 ]
-const xyz = namesAges.map(function(identity){
-    return identity.name;
-})
+// const xyz = namesAges.map(function(identity){
+//     return identity.name;
+// })
+//console.log(xyz)
 
-console.log(xyz)
+const short = namesAges.map(identity => (
+    identity.name
+))
+console.log(short )
+
+
+
 
 // DO NOT ALTER THE FOLLOWING CODE:
 const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];

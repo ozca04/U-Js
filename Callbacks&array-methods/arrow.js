@@ -1,17 +1,19 @@
-const square = (x) =>{
-    return x * x
-}
-const add = (x, y) =>{
-    return x + y
+const isEven =  function(num){// regular function expression 
+    return num % 2 === 0;
 }
 
-console.log(add(10, 19))
-
-const rollDie = () => {
-    return Math.floor(Math.random()*6)+1
+const isEven = (num) => {
+    return num % 2 === 0;
 }
 
-const greet = (name) => {
-    return `Hey ${name}`
+const isEven = num => {
+    return num % 2 === 0;
 }
-console.log(greet('mahmut'))
+
+const isEven = num => (
+    num % 2 === 0
+);
+
+const isEven = num => num % 2 === 0; // one expression only 
+
+//they are all same in different format
