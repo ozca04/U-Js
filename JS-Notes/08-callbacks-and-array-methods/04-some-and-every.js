@@ -1,3 +1,9 @@
+/* ============================================================
+   some / every
+   Both return true/false. every = ALL must pass. some = at least one passes.
+   allEvens uses every.
+   ============================================================ */
+
 //EVERY 
 const words = ['dog', 'cat', 'log', 'bag']
 
@@ -23,5 +29,9 @@ exams.every(score => score >= 40)
 function allEvens(num){
     return num.every(n => n % 2 ===0);
 }
+
+
+
+
 
 console.log(allEvens([2,4,6,8]))

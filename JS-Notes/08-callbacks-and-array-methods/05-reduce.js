@@ -1,3 +1,9 @@
+/* ============================================================
+   reduce
+   Boils an array down to a single value (e.g. a sum) using an accumulator.
+   NOTE: 'const total' is redeclared after 'let total' - kept as written.
+   ============================================================ */
+
 const ahmet = [3,5,7,9,11].reduce((accumulator, currentValue) =>{
     return accumulator + currentValue
 })
@@ -19,10 +25,3 @@ for(let price of prices){
 const total = prices.reduce((total, price) => {
     return total + price
 })
-
-const minPrice = price.reduce((min, price) => {
-    if(price < min){
-        return price
-    }
-    return min 
-})// to get the smallest in the array 
