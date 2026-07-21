@@ -42,3 +42,20 @@ const heading = document.querySelector('h4');
 heading.textContent = 'New text here';
 
 //////////CHANGING STYLE//////////////////
+
+const allLinks = document.querySelectorAll('a');
+for(let link of allLinks){
+    link.style.color = 'blue'
+}///this way is not a good idea, but when U wanna use js for styling ur css sheet will not be seen at firts before assigning a class
+
+window.getComputedStyle(h1).color//can be used for anything fontSize/family/margin etc.
+
+
+
+
+ const container = document.querySelector('#container')
+container.style.textAlign = 'center'
+
+const img = document.querySelector('img')
+img.style.width = '150px'
+img.style.borderRadius = '50%'
