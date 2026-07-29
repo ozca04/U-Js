@@ -72,7 +72,6 @@ async function printrainbow() {
 
 const fakeRequestPromise = (url) => {
   return new Promise((resolve, reject) => {
-    //first argument is always success and second is always reject. they can be named anyhing
     const delay = Math.floor(Math.random() * 4500) + 500;
     setTimeout(() => {
       if (delay > 4000) {
