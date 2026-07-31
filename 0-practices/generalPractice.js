@@ -148,19 +148,130 @@
 //   ]),
 // );
 //----------------------------------------------------------------------TASK 15---------------------------------------------------------------------------------
-function expensiveItems(items) {
-  let result = [];
-  for (let i = 0; i < items.length; i++) {
-    if (items[i].price > 10) {
-      result.push(items[i]);
-    }
-  }
-  return result;
-}
-console.log(
-  expensiveItems([
-    { name: "pen", price: 5 },
-    { name: "book", price: 20 },
-    { name: "bag", price: 50 },
-  ]),
-);
+// function expensiveItems(items) {
+//   let result = [];
+//   for (let i = 0; i < items.length; i++) {
+//     if (items[i].price > 10) {
+//       result.push(items[i]);
+//     }
+//   }
+//   return result;
+// }
+// console.log(
+//   expensiveItems([
+//     { name: "pen", price: 5 },
+//     { name: "book", price: 20 },
+//     { name: "bag", price: 50 },
+//   ]),
+// );
+//----------------------------------------------------------------------TASK 16---------------------------------------------------------------------------------31/07
+
+// function cheapest(items) {
+//   let itemC = items[0];
+//   for (let i = 0; i < items.length; i++) {
+//     if (items[i].price < itemC.price) {
+//       itemC = items[i];
+//     }
+//   }
+//   return itemC.name;
+// }
+
+// console.log(
+//   cheapest([
+//     { name: "pen", price: 500 },
+//     { name: "book", price: 20 },
+//     { name: "bag", price: 50 },
+//   ]),
+// );
+//----------------------------------------------------------------------TASK 17---------------------------------------------------------------------------------31/07
+// function makeMultiplier(numm) {
+//   return function (num) {
+//     return num * numm;
+//   };
+// }
+// const triple = makeMultiplier(3);
+// console.log(triple(4)); // 15
+//----------------------------------------------------------------------TASK 18---------------------------------------------------------------------------------31/07
+// const counter = {
+//   count: 0,
+//   increment() {
+//   this.count++;
+//   return this.count
+//   },
+// };
+// counter.increment();
+// counter.increment();
+// console.log(counter.count);
+//----------------------------------------------------------------------TASK 18--------------------------async-------------------------------------------------------31/07
+// function wait() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve();
+//     }, 1000);
+//   });
+// }
+//----------------------------------------------------------------------TASK 19--------------------------async-------------------------------------------------------31/07/
+// function wait() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("finished");
+//     }, 1000);
+//   });
+// }
+// wait()
+// .then((value) => {
+//   console.log(value);
+// });
+//----------------------------------------------------------------------TASK 20--------------------------async-------------------------------------------------------31/07/
+
+// function wait() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("finished");
+//     }, 1000);
+//   });
+// }
+// async function run() {
+//   const result = await wait();
+//   console.log(result);
+// }
+
+// run();
+//----------------------------------------------------------------------TASK 21--------------------------async-------------------------------------------------------31/07/
+// function wait(prompt) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(prompt);
+//       resolve();
+//     }, 1000);
+//   });
+// }
+// async function run() {
+//   await wait("first done");
+//   await wait("second done");
+// }
+
+// run();
+// //more flexible version
+// async function run() {
+//   await wait();
+//   console.log("first done");
+//   await wait();
+//   console.log("second done");
+// }
+/////////////////////////////
+//----------------------------------------------------------------------TASK 22--------------------------async-------------------------------------------------------31/07/
+// function wait() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("finished");
+//     }, 1000);
+//   });
+// }
+
+// async function run() {
+//   const [a, b] = await Promise.all([wait(), wait()]); // a = 'finished', b = 'finished'
+//   console.log("both done");
+// }
+// run();
+//----------------------------------------------------------------------TASK 23--------------------------async-------------------------------------------------------31/07/
