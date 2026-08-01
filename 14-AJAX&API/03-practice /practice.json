@@ -1,0 +1,8 @@
+{
+  "name": "Ali",
+  "age": 25,
+  "isStudent": true,
+  "skills": ["js", "sql"],
+  "address": { "city": "Paris", "zip": "75000" },
+  "pet": null
+}
