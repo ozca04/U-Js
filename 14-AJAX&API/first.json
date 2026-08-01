@@ -1,3 +1,5 @@
 {
-  "_note": "json is a format to share information"
+  "_note": "json is a format to share information",
+  "_noteSecond": "when u see swapi.dev on the colt course section 28, swap them with swapi.tech",
+  "_AXIOS": "worth using, just include the script. all that console stuff is unnecc "
 }
