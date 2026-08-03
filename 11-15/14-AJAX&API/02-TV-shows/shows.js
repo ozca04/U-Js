@@ -1,4 +1,6 @@
 const form = document.querySelector("#seachForm");
+const movieContainer = document.querySelector("#movieContainer");
+
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
   const userSearch = form.elements.query.value;
