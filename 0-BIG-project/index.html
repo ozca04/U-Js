@@ -10,26 +10,32 @@
     />
   </head>
   <body>
-    <h1 class="title is-1">Personal Watch List</h1>
-    <form id="form">
-      <div class="field has-addons">
-        <div class="control">
-          <input
-            class="input"
-            id="movieSearchBar"
-            placeholder="Title"
-            type="text"
-            name="query"
-          />
-        </div>
-        <div class="control">
-          <button class="button is-info" id="movieSeachButton">Search</button>
-        </div>
+    <div class="fixed-grid">
+      <div class="grid">
+        <h1 class="title is-1 m-auto">Watch List</h1>
+        <form class="m-auto" id="form">
+          <div class="field has-addons">
+            <div class="control">
+              <input
+                class="input"
+                id="movieSearchBar"
+                placeholder="Title"
+                type="text"
+                name="query"
+              />
+            </div>
+            <div class="control">
+              <button class="button is-info" id="movieSeachButton">
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
-
-    <div id="movieContainer" class="grid"></div>
-
+    </div>
+    <div class="fixed-grid has-4-cols">
+      <div class="grid" id="movieContainer"></div>
+    </div>
     <!-- Links -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="app.js"></script>

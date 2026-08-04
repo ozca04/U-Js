@@ -13,28 +13,33 @@ form.addEventListener("submit", async function (e) {
     );
 
     makeImages(result.data);
-    makeTitle(result.data);
+
     form.elements.query.value = "";
   } catch (e) {
     console.log(e);
   }
 });
-const makeImages = function imageGenerator(shows) {
-  for (let i = 0; i < shows.length; i++) {
-    if (shows[i].show.image) {
-      const img = document.createElement("img");
-      img.src = shows[i].show.image.medium;
-      document.body.append(img); //body yerine div
-    }
-  }
-};
 
-const makeTitle = function titleGenerator(title) {
-  for (let i = 0; i < title.length; i++) {
-    if (title[i].show.name) {
+const makeImages = function Generator(shows) {
+  for (let i = 0; i < shows.length; i++) {
+    const showImg = shows[i].show.image;
+    const showName = shows[i].show.name;
+    if (showImg && showName) {
+      const card = document.createElement("div"); // the wrapper
+      card.className = "cell";
+
+      const img = document.createElement("img");
+      img.src = showImg.medium;
+
       const h2 = document.createElement("h2");
-      h2.textContent = title[i].show.name;
-      document.body.append(h2);
+      h2.textContent = showName;
+
+      const btn = document.createElement("button");
+      btn.className = "button is-white";
+      btn.innerText = "Add";
+
+      card.append(img, h2, btn); // all three go INSIDE the card
+      movieContainer.append(card); // the card goes in the grid
     }
   }
 };
